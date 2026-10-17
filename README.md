@@ -18,6 +18,8 @@ Homyz is a full-stack real estate web application built using the MERN stack. It
 - **Responsive Interface:** User-friendly interface for different screen sizes.
 - **Contact Options:** Access property-related contact information and inquiry options.
 - **API Integration:** Connect frontend components with backend services.
+- **Property Data Management:** Prisma ORM for structured property data management.
+- **Image Management:** Cloudinary for property image uploads, storage, and delivery.
 
 ##  Tech Stack
 
@@ -38,6 +40,8 @@ Homyz is a full-stack real estate web application built using the MERN stack. It
 ### Database and Authentication
 - MongoDB
 - Auth0
+- Prisma ORM
+- Cloudinary
 
 ### Additional Libraries
 - Framer Motion
