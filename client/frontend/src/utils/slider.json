@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Greenwood Estate",
+    "price": "320,000",
+    "detail": "45 Oakwood Drive, Brooklyn, New York, USA",
+    "image": "./r1.png"
+  },
+  {
+    "name": "Cambridge Gardens",
+    "price": "550,000",
+    "detail": "19 King's Parade, Cambridge, United Kingdom",
+    "image": "./r2.png"
+  },
+  {
+    "name": "Riverside Villas",
+    "price": "410,000",
+    "detail": "Via Roma 12, Trastevere, Rome, Italy",
+    "image": "./r3.png"
+  },
+  {
+    "name": "Aspen Creek Residence",
+    "price": "390,000",
+    "detail": "134 Aspen Way, Denver, Colorado, USA",
+    "image": "./r1.png"
+  },
+  {
+    "name": "Westminster Heights",
+    "price": "620,000",
+    "detail": "88 Westminster Bridge Road, London, United Kingdom",
+    "image": "./r2.png"
+  },
+  {
+    "name": "Alpine Meadow Homes",
+    "price": "460,000",
+    "detail": "28 Dorfstrasse, Zermatt, Switzerland",
+    "image": "./r3.png"
+  }
+]

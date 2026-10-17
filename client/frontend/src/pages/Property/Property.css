@@ -1,0 +1,97 @@
+.property-container{
+    gap: 2rem;
+    position: relative;
+    display: flex; /* Ensure flex layout */
+}
+
+.property-container .like{
+    position: absolute;
+    top: 3rem; 
+    right: 3rem;
+    cursor: pointer;
+}
+
+.property-container>img{
+    align-self: center;
+    max-height: 35rem;
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.price{
+    white-space: nowrap;
+}
+
+.property-details{
+    width: 100%;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.property-details>div{
+    flex: 1;
+    gap: 1.5rem;
+}
+
+.property-details .left .head{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.facilities{
+    display: flex;
+    gap: .9rem;
+    font-size: .9rem;
+}
+
+.facility{
+    padding-left: .5rem;
+    gap: .4rem;
+}
+
+.property-details .button{
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.property-details .button:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width:700px){
+    .property-container {
+        flex-direction: column; 
+    }
+    .head{
+        flex-direction: column;
+    }
+    .facilities{
+        flex-direction: column;
+        align-items: center;      /* Center items horizontally */
+        justify-content: center;  /* Optional: center vertically if needed */
+        width: 100%;
+    }
+    .property-details {
+        flex-direction: column !important;
+        width: 100%;
+    }
+    .map {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .property-details>div{
+        flex-direction: column;
+    }
+    .property-details .left {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .map-container {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
