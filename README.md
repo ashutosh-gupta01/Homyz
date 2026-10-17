@@ -1,80 +1,143 @@
-# RealEstate-MERN
+# Homyz – Real Estate Platform
 
-A full-stack Real Estate application built with the MERN stack (MongoDB, Express, React, Node). This repository contains the frontend (React) and backend (Node/Express) to manage property listings, user authentication, image uploads, and search/filter functionality.
+Homyz is a full-stack real estate web application built using the MERN stack. It provides a user-friendly platform to explore property listings, view property details, and manage property-related interactions with secure user authentication.
 
-Table of contents
-- [Demo](#demo)
-- [Features](#features)
-- [Tech stack](#tech-stack)
-- [Prerequisites](#prerequisites)
-- [Getting started (local)](#getting-started-local)
-- [API (high level)](#api-high-level)
+##  Live Demo
 
+- **Live Website:** [Visit Homyz](https://homyz-frontend.onrender.com)
+- **Backend API:** [Homyz Backend](https://homyz-backend-fc41.onrender.com)
+- **GitHub Repository:** [View Source Code](https://github.com/ashutosh-gupta01/Homyz)
 
-## Demo
-[Website Link](https://real-estate-mern-vg.vercel.app/)
+##  Features
 
-## Features
-- User authentication (register, login, JWT-based sessions)
-- CRUD for property listings (create, read, update, delete)
-- Image upload support (Cloudinary or local uploads)
-- Search and filter properties (by city, price, type, bedrooms, etc.)
-- Pagination and sorting
-- Role-based access (owner/admin vs visitor) — optional depending on implementation
+- **Property Listings:** Explore available properties and view detailed information.
+- **Property Search:** Browse properties using the search and filtering functionality available in the application.
+- **User Authentication:** Auth0 integration for secure user login and authentication.
+- **Property Details:** View property information, images, and other available details.
+- **Favorites:** Interact with and save favorite properties, if supported by the current implementation.
+- **Responsive Interface:** User-friendly interface for different screen sizes.
+- **Contact Options:** Access property-related contact information and inquiry options.
+- **API Integration:** Connect frontend components with backend services.
 
-## Tech stack
-- Frontend: React, React Router, Axios (JavaScript, CSS, HTML)
-- Backend: Node.js, Express
-- Database: MongoDB (Mongoose)
-- Authentication: JWT
-- Image Hosting: Cloudinary (optional)
-- Dev tools: nodemon, concurrently (optional)
+##  Tech Stack
 
-## Prerequisites
-- Node.js (>= 14)
-- npm or yarn
-- MongoDB instance (local or Atlas)
-- (Optional) Cloudinary account for image uploads
+### Frontend
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Tailwind CSS, where used
+- React Router
+- Axios
 
-## Getting started (local)
-1. Clone the repo
-   git clone https://github.com/VedantGadge/RealEstate-MERN.git
-   cd RealEstate-MERN
+### Backend
+- Node.js
+- Express.js
+- RESTful APIs
 
-2. Install dependencies
-   - Backend
-     cd server
-     npm install
-   - Frontend
-     cd ../client
-     npm install
+### Database and Authentication
+- MongoDB
+- Auth0
 
-   (If repository layout differs, install dependencies in the appropriate folders.)
+### Additional Libraries
+- Framer Motion
+- React Icons
+- Swiper
 
-3. Configure environment variables (see next section)
+##  Project Structure
 
-4. Run locally
-   - Start backend server (from /server)
-     npm run dev
-     (This command usually uses nodemon. If your package.json uses a different script, use that.)
-   - Start frontend (from /client)
-     npm start
+```text
+Homyz/
+├── client/
+│   └── frontend/     # React frontend application
+├── server/            # Backend application, if present
+└── README.md
+```
 
-   Or run both in parallel if a root script is provided:
-     npm run dev:all
-   (Adjust according to the repository scripts.)
+*Note: Update the folder structure above to match the actual repository.*
 
-)
+##  Getting Started
 
-## API (high level)
-Typical endpoints (prefix: /api)
-- POST /api/auth/register — register user
-- POST /api/auth/login — login
-- GET /api/properties — list properties (query params: page, limit, filters)
-- GET /api/properties/:id — get property detail
-- POST /api/properties — create property (protected)
-- PUT /api/properties/:id — update property (protected / owner)
-- DELETE /api/properties/:id — delete property (protected / owner)
-- POST /api/uploads — upload images (protected)
+### Prerequisites
 
+- Node.js and npm
+- Git
+- MongoDB, if required by the backend
+- Auth0 application configuration
 
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/ashutosh-gupta01/Homyz.git
+cd Homyz
+```
+
+### 2. Install Dependencies
+
+Navigate to the directory containing the frontend `package.json` file:
+
+```bash
+cd client/frontend
+npm install
+```
+
+If the repository contains a separate backend with its own `package.json`, navigate to that directory and install its dependencies separately:
+
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+
+Create the required `.env` file in the appropriate directory. Use the exact variable names expected by your application.
+
+For example, Auth0 configuration may require:
+
+```env
+AUTH0_DOMAIN=your_auth0_domain
+AUTH0_CLIENT_ID=your_auth0_client_id
+```
+
+If your frontend uses Vite, client-side variables commonly require the `VITE_` prefix. Refer to your existing code for the exact configuration.
+
+**Security:** Never commit real credentials, access tokens, or private API keys to GitHub.
+
+### 4. Run the Application
+
+Start the frontend using the script configured in its `package.json`. For a Vite application, the command is commonly:
+
+```bash
+npm run dev
+```
+
+If a separate backend exists, open another terminal, navigate to its directory, and run the configured start script.
+
+##  Key Learning Outcomes
+
+- Developing a full-stack web application using React and Node.js.
+- Building reusable React components and interactive interfaces.
+- Integrating Auth0 for user authentication.
+- Working with RESTful APIs and Axios.
+- Connecting frontend components with backend services.
+- Managing environment configuration and deployment.
+- Debugging application integration issues.
+
+##  Future Improvements
+
+- Advanced property search and filtering.
+- Enhanced property comparison and favorites.
+- Improved property management workflows.
+- Map-based property discovery.
+- Enhanced accessibility and mobile experience.
+
+##  Author
+
+**Aashutosh Gupta**
+
+- **GitHub:** [ashutosh-gupta01](https://github.com/ashutosh-gupta01)
+- **LinkedIn:** [Aashutosh Gupta](https://www.linkedin.com/in/ashutosh-kumar-gupta-0561ab265/)
+- **Portfolio:** [Personal Portfolio](https://personalportfolio-bzqy.onrender.com)
+
+---
+
+If you find this project useful, consider giving the repository a star.
