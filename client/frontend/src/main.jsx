@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       clientId="FbNgsHDBuN7GnssTW8TtZorvStveuB7Z"
       authorizationParams={{
         redirect_uri: window.location.origin,
-        audience: "http://localhost:8000",
+        audience: import.meta.env.VITE_AUTH0_AUDIENCE || "http://localhost:8000",
         scope: "openid profile email",
       }}
     >
